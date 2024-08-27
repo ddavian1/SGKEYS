@@ -1,0 +1,120 @@
+/* Importa la fuente de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://img.hype.games/cdn/2d8039b0-3c33-4420-9c89-86a53dea61bbFree%20fire_9.jpg'); /* Cambia esta URL a tu imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+    background-position: center; /* Centra la imagen en el fondo */
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh; /* Altura completa de la ventana */
+    position: relative; /* Permite el posicionamiento absoluto del logo y el texto */
+}
+
+.top-left-text {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: gold; /* Color dorado para el texto */
+    font-size: 36px; /* Tamaño de la fuente */
+    font-weight: bold; /* Fuente en negrita */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para dar un efecto 3D */
+    z-index: 1100; /* Asegura que el texto esté por encima de otros elementos */
+}
+
+.navbar {
+    width: 100%;
+    background-color: #000; /* Fondo negro para la barra de navegación */
+    padding: 10px 0; /* Espaciado arriba y abajo */
+    position: fixed; /* Fija la barra en la parte superior */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff; /* Color blanco para los enlaces */
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+.container {
+    text-align: center;
+    background: #000; /* Fondo negro sin opacidad */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 60px; /* Espacio para la barra de navegación */
+}
+
+h1, h2 {
+    color: #fff; /* Color blanco para el texto del encabezado y subtítulo */
+    margin: 20px 0; /* Espaciado arriba y abajo del texto */
+}
+
+h1 {
+    font-size: 2.5em; /* Tamaño del texto del encabezado */
+}
+
+h2 {
+    font-size: 1.5em; /* Tamaño del texto del subtítulo */
+}
+
+button {
+    padding: 20px 40px; /* Aumenta el tamaño del botón */
+    font-size: 18px; /* Aumenta el tamaño del texto del botón */
+    border: none;
+    background-color: #00bfff; /* Color celeste para el botón */
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Bangers', sans-serif; /* Fuente similar a la de Fortnite */
+    transition: background-color 0.3s ease;
+    margin-top: 20px; /* Espacio arriba del botón */
+}
+
+button:hover {
+    background-color: #87ceeb; /* Color del botón al pasar el mouse (un celeste más claro) */
+}
+
+/* Estilos para la imagen promocional */
+.promo-image {
+    margin-bottom: 40px; /* Espaciado abajo de la imagen para separarla del botón */
+    width: 100%; /* Ajusta el ancho de la imagen al ancho del contenedor */
+    max-width: 600px; /* Ancho máximo de la imagen */
+    height: auto; /* Mantiene la relación de aspecto */
+    border: 5px solid gold; /* Bordes dorados */
+    border-radius: 10px; /* Esquinas redondeadas de la imagen */
+}
+
+/* Estilos para el logo */
+.logo-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1100; /* Asegura que el logo esté sobre otros elementos */
+}
+
+.logo {
+    width: 100px; /* Ajusta el tamaño del logo según sea necesario */
+    height: auto; /* Mantiene la relación de aspecto */
+}
